@@ -11,16 +11,17 @@ public class Problem13 {
         Problem13 problem13 = new Problem13();
         System.out.println(problem13.romanToInt("MCMXCIV"));
     }
+
     public int romanToInt(String s) {
         if (s != null && s.length() > 0) {
             Map<Character, Integer> map = new HashMap<Character, Integer>();
-            map.put('I',1);
-            map.put('V',5);
-            map.put('X',10);
-            map.put('L',50);
-            map.put('C',100);
-            map.put('D',500);
-            map.put('M',1000);
+            map.put('I', 1);
+            map.put('V', 5);
+            map.put('X', 10);
+            map.put('L', 50);
+            map.put('C', 100);
+            map.put('D', 500);
+            map.put('M', 1000);
             if (s.length() == 1) {
                 return getNum(s.charAt(0), map);
             }
